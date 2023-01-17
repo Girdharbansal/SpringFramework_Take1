@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean class="com.springcore.Certi" name="certRef">
+        <constructor-arg value ="Python language" />
+    </bean>
+     <bean class="com.springcore.Person" name="person1" c:name="Girdhar" c:personId="529140" c:certi-ref="certRef" >
+         <constructor-arg>
+             <list>
+                 <value>"2 more to go"</value>
+                 <value>"1 more to go"</value>
+             </list>
+         </constructor-arg>
+     </bean>
+
+</beans>
